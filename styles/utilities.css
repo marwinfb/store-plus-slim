@@ -1,0 +1,77 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+/* XS */
+@media (max-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* SM */
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "tv"
+            "av"
+            "wd"
+            "mo"
+            "ref"
+            "mw"
+            "ac";
+  }
+}
+
+/* MD */
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* LG */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    margin-top: 10rem;
+  }
+}
+
+/* XL */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+            "tv  av"
+            "wd mo"
+            "ref mw"
+            "ac ac";
+  }
+}
+
+/* 2XL */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

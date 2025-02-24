@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'SamsungOne';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../public/fonts/SamsungOne-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SamsungSharpSansBold';
+  font-weight: 800;
+  font-style: normal;
+  src: url('../public/fonts/SamsungSharpSansBold.woff2') format('woff2');
+}
+
+:root {
+  --font-primary: "SamsungOne";
+  --font-secondary: "SamsungSharpSansBold";
+
+  --color-pale-orange: #F8C493;
+  --color-pale-green: #A5D699;
+  --color-pale-teal: #A5D3D7;
+  --color-pale-blue: #C6E0FA;
+  --color-pale-purple: #BAB5EB;
+  --color-pale-pink: #E7BED7;
+  --color-dark: #000;
+}
+
+body {
+  font-family: var(--font-secondary), sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+

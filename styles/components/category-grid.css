@@ -1,0 +1,83 @@
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "tv  av wd mo"
+        "ref mw ac ac";
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    color: #000;
+    min-height: 300px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card__inner-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card__image {
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card__image {
+    transform: scale(1.1);
+}
+
+.card__header {
+    font-size: 1.5rem;
+    margin-top: auto;
+}
+
+.card--tv {
+    grid-area: tv;
+    --bg-color: var(--color-pale-blue);
+}
+
+.card--sound-device {
+    grid-area: av;
+    --bg-color: var(--color-pale-purple);
+}
+
+.card--washer-dryer {
+    grid-area: wd;
+    --bg-color: var(--color-pale-orange);
+}
+
+.card--monitor {
+    grid-area: mo;
+    --bg-color: var(--color-pale-pink);
+}
+
+.card--refrigerator {
+    grid-area: ref;
+    --bg-color: var(--color-pale-pink);
+}
+
+.card--microwave {
+    grid-area: mw;
+    --bg-color: var(--color-pale-teal);
+}
+
+.card--air-conditioner {
+    grid-area: ac;
+    --bg-color: var(--color-pale-green);
+}
